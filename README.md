@@ -5,6 +5,8 @@ A customizable and interactive birthday website template designed to deliver a c
 This project was ideated and designed independently, with AI-assisted development used to accelerate implementation and enhance efficiency.
 
 ---
+## 🌐 Live Demo
+https://BackEndUJ.github.io/interactive-birthday-experience/
 
 ## 🚀 Features
 
