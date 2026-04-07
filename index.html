@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday TEMPLATE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Quicksand:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Opening Photo Mosaic Page -->
+    <section class="page photo-mosaic-page active" id="photoMosaicPage">
+        <!-- Floating hearts background -->
+        <div class="floating-hearts" id="floatingHearts"></div>
+
+        <!-- Photo Grid -->
+        <div class="photo-grid" id="photoGrid"></div>
+
+        <!-- Center Button -->
+        <div class="center-button-container">
+            <div class="button-glow"></div>
+            <button class="start-button" id="startButton">
+                <span class="sparkle">✨</span>
+                <span class="sparkle">💫</span>
+                <span class="sparkle">⭐</span>
+                <span class="sparkle">✨</span>
+                LET'S GO...😚
+            </button>
+        </div>
+    </section>
+
+    <!-- Elegant Page Transition -->
+    <div class="page-transition" id="pageTransition"></div>
+
+    <!-- Cake Game Page -->
+    <section class="page cake-game-page" id="cakeGamePage">
+        <div class="floating-hearts" id="cakeHearts"></div>
+
+        <div class="game-container">
+            <!-- Circular character -->
+            <div class="blow-character" id="blowCharacter">
+                <div class="char-eye left"></div>
+                <div class="char-eye right"></div>
+                <div class="char-mouth"></div>
+                <div class="wind-effect" id="windEffect">💨</div>
+            </div>
+
+            <!-- Birthday cake with animated candles -->
+            <div class="birthday-cake" id="birthdayCake">
+                <div class="cake-base">
+                    <div class="frosting"></div>
+                    <div class="cake-layer"></div>
+                    <div class="cake-layer"></div>
+                    <div class="cake-layer"></div>
+                    <div class="candles-container" id="candlesContainer">
+                        <div class="candle">
+                            <div class="wick"></div>
+                            <div class="flame"></div>
+                            <div class="smoke">💨</div>
+                        </div>
+                        <div class="candle">
+                            <div class="wick"></div>
+                            <div class="flame"></div>
+                            <div class="smoke">💨</div>
+                        </div>
+                        <div class="candle">
+                            <div class="wick"></div>
+                            <div class="flame"></div>
+                            <div class="smoke">💨</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blow button -->
+            <button class="blow-button" id="blowButton">BLOW 💨</button>
+
+            <!-- Success message (hidden initially) -->
+            <div class="success-message" id="successMessage">
+                <h1 class="success-title">Finally! Happy Birthday! 🎉</h1>
+                <p class="success-subtitle">Time for your special letter...</p>
+                <button class="continue-button" id="toLetterButton">Read Your Letter 💌</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Page -->
+    <section class="page welcome-page" id="welcomePage">
+        <div class="floating-hearts" id="welcomeHearts"></div>
+        
+        <!-- Decorative elements -->
+        <div class="welcome-decor">💖</div>
+        <div class="welcome-decor">✨</div>
+        <div class="welcome-decor">🌸</div>
+        <div class="welcome-decor">💫</div>
+
+        <div class="welcome-content">
+            <h1 class="welcome-title">Happy Birthday,<br>My Gorgeous "YOUR PERSON"</h1>
+            <p class="welcome-message">
+                Hey gorgeous! I can't believe another year has passed with you in my life. You make everything brighter, funnier, and so much more meaningful. Today is all about celebrating YOU - the amazing person you are, the incredible friend you've been, and all the beautiful moments we've shared together. So sit back, relax, and let me take you through a little journey I've put together just for you. Got so much more coming your way! 💕
+            </p>
+            <button class="continue-button" id="continueButton">Continue the Journey ✨</button>
+        </div>
+    </section>
+
+    <!-- Letter Page -->
+    <section class="page letter-page" id="letterPage">
+        <div class="floating-hearts" id="letterHearts"></div>
+        
+        <div class="letter-container">
+            <p class="letter-text placeholder" id="letterText">Your heartfelt letter will go here...
+
+This is where you'll write your beautiful, personal message to her. Take your time and write from the heart. The letter will appear exactly as you write it, with all the line breaks and spacing you want.
+
+You can make it as long or as short as you like. Pour your heart out, share memories, express gratitude, tell her what she means to you.
+
+This placeholder text will be replaced with your actual letter when you're ready to write it. 💕</p>
+            
+            <button class="to-gallery-button" id="toGalleryButton">See Our Memories 📸</button>
+        </div>
+    </section>
+
+    <!-- Memory Book Page -->
+    <section class="page memory-book-page" id="memoryBookPage">
+        <div class="floating-hearts" id="bookHearts"></div>
+
+        <!-- Closed Book -->
+        <div class="book-closed" id="bookClosed">
+            <h1 class="book-cover-title">Our Memories</h1>
+            <p class="book-cover-subtitle">A Journey Through Time 💕</p>
+            <button class="open-book-button">Open Book 📖</button>
+        </div>
+
+        <!-- Open Book -->
+        <div class="book-container" id="bookContainer">
+            <button class="close-book-button" id="closeBookBtn">Close ✕</button>
+            
+            <!-- Navigation Arrows -->
+            <button class="nav-arrow prev" id="prevPage">‹</button>
+            <button class="nav-arrow next" id="nextPage">›</button>
+
+            <!-- Spread 1: Traditional Day -->
+            <div class="book-spread" data-spread="0">
+                <div class="book-page left">
+                    <h2 class="page-title">Traditional Day</h2>
+                    <div class="page-photos">
+                        <div class="photo-placeholder">Photo 1</div>
+                        <div class="photo-placeholder">Photo 2</div>
+                        <div class="photo-placeholder">Photo 3</div>
+                        <div class="photo-placeholder">Photo 4</div>
+                    </div>
+                </div>
+                <div class="book-page right">
+                    <div class="page-photos" style="margin-top: 80px;">
+                        <div class="photo-placeholder">Photo 5</div>
+                        <div class="photo-placeholder">Photo 6</div>
+                        <div class="photo-placeholder">Photo 7</div>
+                        <div class="photo-placeholder">Photo 8</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spread 2: Close Moments -->
+            <div class="book-spread" data-spread="1">
+                <div class="book-page left">
+                    <h2 class="page-title">Close Moments</h2>
+                    <div class="page-photos">
+                        <div class="photo-placeholder">Photo 1</div>
+                        <div class="photo-placeholder">Photo 2</div>
+                        <div class="photo-placeholder">Photo 3</div>
+                        <div class="photo-placeholder">Photo 4</div>
+                    </div>
+                </div>
+                <div class="book-page right">
+                    <div class="page-photos" style="margin-top: 80px;">
+                        <div class="photo-placeholder">Photo 5</div>
+                        <div class="photo-placeholder">Photo 6</div>
+                        <div class="photo-placeholder">Photo 7</div>
+                        <div class="photo-placeholder">Photo 8</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spread 3: Happy Moments -->
+            <div class="book-spread" data-spread="2">
+                <div class="book-page left">
+                    <h2 class="page-title">Happy Moments</h2>
+                    <div class="page-photos">
+                        <div class="photo-placeholder">Photo 1</div>
+                        <div class="photo-placeholder">Photo 2</div>
+                        <div class="photo-placeholder">Photo 3</div>
+                        <div class="photo-placeholder">Photo 4</div>
+                    </div>
+                </div>
+                <div class="book-page right">
+                    <div class="page-photos" style="margin-top: 80px;">
+                        <div class="photo-placeholder">Photo 5</div>
+                        <div class="photo-placeholder">Photo 6</div>
+                        <div class="photo-placeholder">Photo 7</div>
+                        <div class="photo-placeholder">Photo 8</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spread 4: Adventure -->
+            <div class="book-spread" data-spread="3">
+                <div class="book-page left">
+                    <h2 class="page-title">Adventure</h2>
+                    <div class="page-photos">
+                        <div class="photo-placeholder">Photo 1</div>
+                        <div class="photo-placeholder">Photo 2</div>
+                        <div class="photo-placeholder">Photo 3</div>
+                        <div class="photo-placeholder">Photo 4</div>
+                    </div>
+                </div>
+                <div class="book-page right">
+                    <div class="page-photos" style="margin-top: 80px;">
+                        <div class="photo-placeholder">Photo 5</div>
+                        <div class="photo-placeholder">Photo 6</div>
+                        <div class="photo-placeholder">Photo 7</div>
+                        <div class="photo-placeholder">Photo 8</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spread 5: My Favourite Pics -->
+            <div class="book-spread" data-spread="4">
+                <div class="book-page left">
+                    <h2 class="page-title">My Favourite Pics</h2>
+                    <div class="page-photos">
+                        <div class="photo-placeholder">Photo 1</div>
+                        <div class="photo-placeholder">Photo 2</div>
+                        <div class="photo-placeholder">Photo 3</div>
+                        <div class="photo-placeholder">Photo 4</div>
+                    </div>
+                </div>
+                <div class="book-page right">
+                    <div class="page-photos" style="margin-top: 80px;">
+                        <div class="photo-placeholder">Photo 5</div>
+                        <div class="photo-placeholder">Photo 6</div>
+                        <div class="photo-placeholder">Photo 7</div>
+                        <div class="photo-placeholder">Photo 8</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spread 6: Final Message -->
+            <div class="book-spread" data-spread="5">
+                <div class="book-page left final-message">
+                    <p class="final-message-text" id="finalMessageText">Your final message goes here...
+
+You can edit this to say whatever you want - a closing thought, a birthday wish, or just a sweet goodbye.
+
+This is the perfect ending to your beautiful memory book! 💕</p>
+                </div>
+                <div class="book-page right final-message">
+                    <h2 class="page-title" style="margin-top: 200px;">Happy Birthday,<br>My "WHAT =EVER YOU WANT TO ADD"</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
