@@ -56,6 +56,12 @@ This template can be customized and reused for:
 
 ---
 
+## 📸 Preview
+
+![Intro](assets/preview/intro-view.png)
+![Cake Game](assets/preview/cake-game.png)
+![Memory Book](assets/preview/memory-book.png)
+
 ## ⚙️ How to Use
 
 1. Clone the repository:
